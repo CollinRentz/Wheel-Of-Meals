@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F78AD1B0B92FDFCE50CD745 /* Pods_Wheel_Of_Meals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4684031E50185DEC061FEB4E /* Pods_Wheel_Of_Meals.framework */; };
+		9F46D653294A605000A6A746 /* 116363 fortune-wheel.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F46D652294A605000A6A746 /* 116363 fortune-wheel.json */; };
+		9F46D657294BC6BE00A6A746 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46D656294BC6BE00A6A746 /* RestaurantViewController.swift */; };
+		9F46D65A294BCD1700A6A746 /* Wheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46D659294BCD1700A6A746 /* Wheel.swift */; };
+		9F46D65D294CE1FC00A6A746 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46D65C294CE1FC00A6A746 /* Restaurant.swift */; };
+		9F46D65F294CEA0F00A6A746 /* WheelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46D65E294CEA0F00A6A746 /* WheelController.swift */; };
+		9F46D661294CEA2000A6A746 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46D660294CEA2000A6A746 /* RestaurantController.swift */; };
+		9F46D6632950F14A00A6A746 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46D6622950F14A00A6A746 /* WheelViewController.swift */; };
+		9F52E6092947942E000AE0EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F52E6082947942E000AE0EB /* AppDelegate.swift */; };
+		9F52E60B2947942E000AE0EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F52E60A2947942E000AE0EB /* SceneDelegate.swift */; };
+		9F52E60D2947942E000AE0EB /* SpinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F52E60C2947942E000AE0EB /* SpinViewController.swift */; };
+		9F52E6102947942E000AE0EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F52E60E2947942E000AE0EB /* Main.storyboard */; };
+		9F52E6122947942F000AE0EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F52E6112947942F000AE0EB /* Assets.xcassets */; };
+		9F52E6152947942F000AE0EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F52E6132947942F000AE0EB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4684031E50185DEC061FEB4E /* Pods_Wheel_Of_Meals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wheel_Of_Meals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51CC1F576D8FF6E4B2627107 /* Pods-Wheel Of Meals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheel Of Meals.release.xcconfig"; path = "Target Support Files/Pods-Wheel Of Meals/Pods-Wheel Of Meals.release.xcconfig"; sourceTree = "<group>"; };
+		9F46D652294A605000A6A746 /* 116363 fortune-wheel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "116363 fortune-wheel.json"; sourceTree = "<group>"; };
+		9F46D656294BC6BE00A6A746 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		9F46D659294BCD1700A6A746 /* Wheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheel.swift; sourceTree = "<group>"; };
+		9F46D65C294CE1FC00A6A746 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		9F46D65E294CEA0F00A6A746 /* WheelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelController.swift; sourceTree = "<group>"; };
+		9F46D660294CEA2000A6A746 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
+		9F46D6622950F14A00A6A746 /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
+		9F52E6052947942E000AE0EB /* Wheel Of Meals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wheel Of Meals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F52E6082947942E000AE0EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F52E60A2947942E000AE0EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9F52E60C2947942E000AE0EB /* SpinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinViewController.swift; sourceTree = "<group>"; };
+		9F52E60F2947942E000AE0EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F52E6112947942F000AE0EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F52E6142947942F000AE0EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F52E6162947942F000AE0EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D599F489EEA93FEFB85DCF /* Pods-Wheel Of Meals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheel Of Meals.debug.xcconfig"; path = "Target Support Files/Pods-Wheel Of Meals/Pods-Wheel Of Meals.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F52E6022947942E000AE0EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F78AD1B0B92FDFCE50CD745 /* Pods_Wheel_Of_Meals.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BC3775F0136691B77EEE044 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9D599F489EEA93FEFB85DCF /* Pods-Wheel Of Meals.debug.xcconfig */,
+				51CC1F576D8FF6E4B2627107 /* Pods-Wheel Of Meals.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F46D65B294CE1DB00A6A746 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F46D659294BCD1700A6A746 /* Wheel.swift */,
+				9F46D65C294CE1FC00A6A746 /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F52E5FC2947942E000AE0EB = {
+			isa = PBXGroup;
+			children = (
+				9F52E6072947942E000AE0EB /* Wheel Of Meals */,
+				9F52E6062947942E000AE0EB /* Products */,
+				6BC3775F0136691B77EEE044 /* Pods */,
+				DA830EB630A48ED877000514 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F52E6062947942E000AE0EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F52E6052947942E000AE0EB /* Wheel Of Meals.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F52E6072947942E000AE0EB /* Wheel Of Meals */ = {
+			isa = PBXGroup;
+			children = (
+				9F46D65B294CE1DB00A6A746 /* Model */,
+				9F52E61F2947947C000AE0EB /* Controllers */,
+				9F52E61D2947944F000AE0EB /* View */,
+				9F52E61C29479445000AE0EB /* Resources */,
+			);
+			path = "Wheel Of Meals";
+			sourceTree = "<group>";
+		};
+		9F52E61C29479445000AE0EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F9A3078294A4C4100BE5E6D /* Animation */,
+				9F52E6082947942E000AE0EB /* AppDelegate.swift */,
+				9F52E60A2947942E000AE0EB /* SceneDelegate.swift */,
+				9F52E6112947942F000AE0EB /* Assets.xcassets */,
+				9F52E6132947942F000AE0EB /* LaunchScreen.storyboard */,
+				9F52E6162947942F000AE0EB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F52E61D2947944F000AE0EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F52E61E2947945C000AE0EB /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F52E61E2947945C000AE0EB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F52E60E2947942E000AE0EB /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9F52E61F2947947C000AE0EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F52E62129479491000AE0EB /* ModelControllers */,
+				9F52E62029479488000AE0EB /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F52E62029479488000AE0EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F52E60C2947942E000AE0EB /* SpinViewController.swift */,
+				9F46D6622950F14A00A6A746 /* WheelViewController.swift */,
+				9F46D656294BC6BE00A6A746 /* RestaurantViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F52E62129479491000AE0EB /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F46D65E294CEA0F00A6A746 /* WheelController.swift */,
+				9F46D660294CEA2000A6A746 /* RestaurantController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		9F9A3078294A4C4100BE5E6D /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				9F46D652294A605000A6A746 /* 116363 fortune-wheel.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		DA830EB630A48ED877000514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4684031E50185DEC061FEB4E /* Pods_Wheel_Of_Meals.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F52E6042947942E000AE0EB /* Wheel Of Meals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F52E6192947942F000AE0EB /* Build configuration list for PBXNativeTarget "Wheel Of Meals" */;
+			buildPhases = (
+				FAD2CACE1D4BA2014E168EC7 /* [CP] Check Pods Manifest.lock */,
+				9F52E6012947942E000AE0EB /* Sources */,
+				9F52E6022947942E000AE0EB /* Frameworks */,
+				9F52E6032947942E000AE0EB /* Resources */,
+				3E74BD6B1F952D3CA269F9A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wheel Of Meals";
+			productName = "Wheel Of Meals";
+			productReference = 9F52E6052947942E000AE0EB /* Wheel Of Meals.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F52E5FD2947942E000AE0EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					9F52E6042947942E000AE0EB = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 9F52E6002947942E000AE0EB /* Build configuration list for PBXProject "Wheel Of Meals" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F52E5FC2947942E000AE0EB;
+			productRefGroup = 9F52E6062947942E000AE0EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F52E6042947942E000AE0EB /* Wheel Of Meals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F52E6032947942E000AE0EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F52E6152947942F000AE0EB /* LaunchScreen.storyboard in Resources */,
+				9F52E6122947942F000AE0EB /* Assets.xcassets in Resources */,
+				9F46D653294A605000A6A746 /* 116363 fortune-wheel.json in Resources */,
+				9F52E6102947942E000AE0EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E74BD6B1F952D3CA269F9A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wheel Of Meals/Pods-Wheel Of Meals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wheel Of Meals/Pods-Wheel Of Meals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wheel Of Meals/Pods-Wheel Of Meals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD2CACE1D4BA2014E168EC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wheel Of Meals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F52E6012947942E000AE0EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F52E60D2947942E000AE0EB /* SpinViewController.swift in Sources */,
+				9F46D65F294CEA0F00A6A746 /* WheelController.swift in Sources */,
+				9F52E6092947942E000AE0EB /* AppDelegate.swift in Sources */,
+				9F46D65D294CE1FC00A6A746 /* Restaurant.swift in Sources */,
+				9F46D65A294BCD1700A6A746 /* Wheel.swift in Sources */,
+				9F46D6632950F14A00A6A746 /* WheelViewController.swift in Sources */,
+				9F52E60B2947942E000AE0EB /* SceneDelegate.swift in Sources */,
+				9F46D657294BC6BE00A6A746 /* RestaurantViewController.swift in Sources */,
+				9F46D661294CEA2000A6A746 /* RestaurantController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F52E60E2947942E000AE0EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F52E60F2947942E000AE0EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F52E6132947942F000AE0EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F52E6142947942F000AE0EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F52E6172947942F000AE0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F52E6182947942F000AE0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F52E61A2947942F000AE0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D599F489EEA93FEFB85DCF /* Pods-Wheel Of Meals.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X83ZW5424;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wheel Of Meals/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Collin-Rentz.Wheel-Of-Meals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F52E61B2947942F000AE0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CC1F576D8FF6E4B2627107 /* Pods-Wheel Of Meals.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X83ZW5424;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wheel Of Meals/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Collin-Rentz.Wheel-Of-Meals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F52E6002947942E000AE0EB /* Build configuration list for PBXProject "Wheel Of Meals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F52E6172947942F000AE0EB /* Debug */,
+				9F52E6182947942F000AE0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F52E6192947942F000AE0EB /* Build configuration list for PBXNativeTarget "Wheel Of Meals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F52E61A2947942F000AE0EB /* Debug */,
+				9F52E61B2947942F000AE0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F52E5FD2947942E000AE0EB /* Project object */;
+}
