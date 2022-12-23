@@ -92,7 +92,7 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         restaurantNameTextField.text = ""
     }
     
-     //___
+     //__
     
     @IBAction func saveToWheelsButton(_ sender: Any) {
         
