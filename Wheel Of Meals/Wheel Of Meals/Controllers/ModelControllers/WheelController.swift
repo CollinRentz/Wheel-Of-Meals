@@ -41,7 +41,9 @@ class WheelController {
     }
     
     func updateWheel(wheel: Wheel, wheelName: String, restaurants: [Restaurant]) {
-        guard let index = wheels.firstIndex(of: wheel) else { return }
+        guard let index = wheels.firstIndex(of: wheel) else {
+            print("Wheel was not found")
+            return }
         // let newWheel = Wheel(wheelName: wheelName, restaurants: restaurants)
         // idea 2
         wheels[index].wheelName = wheelName

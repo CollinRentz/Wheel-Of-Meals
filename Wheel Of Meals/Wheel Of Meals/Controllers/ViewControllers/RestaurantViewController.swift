@@ -26,6 +26,10 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         WheelController.shared.loadFromPersistenceStore()
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        restaurantTableView.reloadData()
+    }
     func updateWheels() {
         guard let unwrapWheel = wheel else { return }
         wheelNameTextField.text = unwrapWheel.wheelName
@@ -44,7 +48,6 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
 //            guard let wheel = wheel else { return cell }
         if let wheelV2 = wheel {
 //            tempRestaurants = []
-            print("\(tempRestaurants.count)")
             var restaurant = wheelV2.restaurants
             for item in tempRestaurants {
                 restaurant.append(item)
@@ -104,8 +107,15 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
             print("my wheel has been created")
             
         } else {
+            guard var wheel = wheel else { return }
+            var restaurants = wheel.restaurants
+            for item in tempRestaurants {
+                restaurants.append(item)
+            }
             // here is where the update function will go because i have a wheel
-            WheelController.shared.updateWheel(wheel: <#T##Wheel#>, wheelName: "\(wheelNameTextField.text ?? "")", restaurants: <#T##[Restaurant]#>)
+            WheelController.shared.updateWheel(wheel: wheel, wheelName: "\(wheelNameTextField.text ?? "")", restaurants: restaurants)
+            print("\(restaurants.count)")
+            restaurantTableView.reloadData()
             print("my wheel has been updated")
         }
     }

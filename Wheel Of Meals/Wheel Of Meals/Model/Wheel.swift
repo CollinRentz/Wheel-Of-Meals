@@ -21,6 +21,6 @@ class Wheel: Codable, Equatable {
     
     // Equatable Conformance
     static func == (lhs: Wheel, rhs: Wheel) -> Bool {
-        return lhs.wheelName == rhs.wheelName && lhs.restaurants == rhs.restaurants
+        return lhs.id == rhs.id
     }
 }
