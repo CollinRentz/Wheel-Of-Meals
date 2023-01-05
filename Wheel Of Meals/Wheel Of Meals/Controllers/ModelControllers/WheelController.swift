@@ -12,7 +12,7 @@ class WheelController {
     static let shared = WheelController()
     var wheels: [Wheel] = []
     init() {
-        let wheels = [
+        let sampleWheels = [
             Wheel(wheelName: "Popular Restaurants", restaurants:
                     [
                 Restaurant(restaurantName: "Wendy's"),
@@ -36,6 +36,7 @@ class WheelController {
                 Restaurant(restaurantName: "Tacotime")
                     ], wheelSelected: false)
             ]
+        wheels = sampleWheels
     }
     func createWheel(wheelName: String, restaurantName: [Restaurant], id: String = UUID().uuidString) {
         let newWheel = Wheel(wheelName: wheelName, restaurants: restaurantName, wheelSelected: false)
@@ -111,6 +112,6 @@ class WheelController {
                 }
             }
         }
-        return restaurantOptions.randomElement() ?? "No restaurant found"
+        return restaurantOptions.randomElement() ?? "No restaurant found. Please select a valid wheel."
     }
 }

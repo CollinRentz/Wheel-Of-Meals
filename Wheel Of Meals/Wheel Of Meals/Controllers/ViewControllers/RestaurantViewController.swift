@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RestaurantViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RestaurantViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var wheelNameTextField: UITextField!
     
@@ -17,14 +17,23 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var wheel: Wheel?
     var tempRestaurants: [Restaurant] = []
+    //dissmiss keyboard with tap gesture
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         restaurantTableView.delegate = self
         restaurantTableView.dataSource = self
+        //dismiss keyboard with scrolling gesture
+        restaurantTableView.keyboardDismissMode = .onDrag
         updateWheels()
         WheelController.shared.loadFromPersistenceStore()
         // Do any additional setup after loading the view.
+        //GIve our text field super powers
+        restaurantNameTextField.delegate = self
+        tapGesture.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tapGesture)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -36,6 +45,11 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         // if the restaurants act up this is why
 //        tempRestaurants = unwrapWheel.restaurants
     }
+    
+    @objc private func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    //MARK: Table View Stuff
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        tempRestaurants.count
         (wheel?.restaurants.count ?? 0) + tempRestaurants.count
@@ -93,7 +107,10 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         print("\(tempRestaurants.count)")
         restaurantTableView.reloadData()
         restaurantNameTextField.text = ""
+        restaurantNameTextField.resignFirstResponder()
+        
     }
+   
     
      //__
     
@@ -107,7 +124,7 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
             print("my wheel has been created")
             
         } else {
-            guard var wheel = wheel else { return }
+            guard let wheel = wheel else { return }
             var restaurants = wheel.restaurants
             for item in tempRestaurants {
                 restaurants.append(item)
@@ -118,6 +135,7 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
             restaurantTableView.reloadData()
             print("my wheel has been updated")
         }
+        navigationController?.popViewController(animated: true)
     }
     
 }

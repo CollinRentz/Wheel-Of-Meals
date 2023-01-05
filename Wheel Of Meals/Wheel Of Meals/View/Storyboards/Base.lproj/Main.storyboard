@@ -72,10 +72,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wheel Of Meals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqk-Yj-mEC">
-                                <rect key="frame" x="0.0" y="89" width="393" height="220"/>
+                                <rect key="frame" x="0.0" y="89" width="393" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -87,16 +87,16 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Spin!">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.92509251830000006" green="0.34395146370000002" blue="0.21305397149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="spinButtonTapped:" destination="zUe-xU-1ED" eventType="touchUpInside" id="POn-Nx-kVq"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-Bq-IyU" customClass="LottieAnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="308" width="393" height="382"/>
+                                <rect key="frame" x="1" y="276" width="393" height="382"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" label="116363-fortune-wheel"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="116363 fortune-wheel"/>
@@ -104,7 +104,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ONh-Uf-g7Q"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Spin!" image="tropicalstorm.circle.fill" catalog="system" id="HRL-6O-WtD"/>
                     <connections>
@@ -215,7 +215,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cBu-4W-bFV"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="g90-9N-Kmo" firstAttribute="width" secondItem="OzF-YV-QaB" secondAttribute="width" multiplier="0.9" id="DsY-f3-9KZ"/>
@@ -283,9 +283,6 @@
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
