@@ -33,12 +33,21 @@ extension WheelViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         WheelController.shared.wheels.count
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        WheelController.shared.didSelectWheel(at: indexPath.row)
+        tableView.reloadData()
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = wheelTableView.dequeueReusableCell(withIdentifier: "wheelCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let wheel = WheelController.shared.wheels[indexPath.row]
         content.text = wheel.wheelName
+//        if wheel == WheelController.shared.activeWheel {
+        if wheel.wheelSelected == true {
+            content.image = UIImage(systemName: "checkmark")
+            
+        }
+//        }
         cell.contentConfiguration = content
         return cell
     }

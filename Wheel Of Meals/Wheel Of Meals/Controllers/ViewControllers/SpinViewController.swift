@@ -24,9 +24,15 @@ class SpinViewController: UIViewController {
 
         @IBAction func spinButtonTapped(_ sender: Any) {
             myWheelAnimationView.contentMode = .scaleAspectFit
-            //        myWheelAnimationView.loopMode = .loop
             myWheelAnimationView.animationSpeed = 1
             myWheelAnimationView.play()
+            presentWinnerRestaurant()
         }
-        
+    func presentWinnerRestaurant() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    
+            let restaurantAlert = AlertController.presentAlertControllerWith(alertTitle: "You're going to:", alertMessage: "\(WheelController.shared.randomWinner())", dismissActionTitle: "Okay!")
+            self.present(restaurantAlert, animated: true)
+                }
+    }
     }

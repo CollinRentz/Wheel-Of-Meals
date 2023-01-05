@@ -10,26 +10,35 @@ import Foundation
 class WheelController {
     
     static let shared = WheelController()
-    
-    var wheels: [Wheel] = [
-    Wheel(wheelName: "Popular Restaurants", restaurants:             [
-        Restaurant(restaurantName: "Wendy's"),
-        Restaurant(restaurantName: "Culver's"),
-        Restaurant(restaurantName: "Taco Bell"),
-        Restaurant(restaurantName: "McDonald's"),
-        Restaurant(restaurantName: "Tacotime")
-            ]),
-    Wheel(wheelName: "Other Restaurants", restaurants:
-            [
-        Restaurant(restaurantName: "Wendy's"),
-        Restaurant(restaurantName: "Culver's"),
-        Restaurant(restaurantName: "Taco Bell"),
-        Restaurant(restaurantName: "Tacotime")
-            ])
-    ]
-    
+    var wheels: [Wheel] = []
+    init() {
+        let wheels = [
+            Wheel(wheelName: "Popular Restaurants", restaurants:
+                    [
+                Restaurant(restaurantName: "Wendy's"),
+                Restaurant(restaurantName: "Culver's"),
+                Restaurant(restaurantName: "Taco Bell"),
+                Restaurant(restaurantName: "McDonald's"),
+                Restaurant(restaurantName: "Panda Express"),
+                Restaurant(restaurantName: "Jersey Mikes"),
+                Restaurant(restaurantName: "Subway"),
+                Restaurant(restaurantName: "Chick-Fil-A"),
+                Restaurant(restaurantName: "Del Taco")
+                    ], wheelSelected: false),
+            Wheel(wheelName: "Mexican Restaurants", restaurants:
+                    [
+                Restaurant(restaurantName: "Costa Vida"),
+                Restaurant(restaurantName: "Cafe Rio"),
+                Restaurant(restaurantName: "Taco Bell"),
+                Restaurant(restaurantName: "Chili's"),
+                Restaurant(restaurantName: "Beto's"),
+                Restaurant(restaurantName: "Del Taco"),
+                Restaurant(restaurantName: "Tacotime")
+                    ], wheelSelected: false)
+            ]
+    }
     func createWheel(wheelName: String, restaurantName: [Restaurant], id: String = UUID().uuidString) {
-        let newWheel = Wheel(wheelName: wheelName, restaurants: restaurantName)
+        let newWheel = Wheel(wheelName: wheelName, restaurants: restaurantName, wheelSelected: false)
         wheels.append(newWheel)
         saveToPersistenceStore()
     }
@@ -44,8 +53,16 @@ class WheelController {
         guard let index = wheels.firstIndex(of: wheel) else {
             print("Wheel was not found")
             return }
-        // let newWheel = Wheel(wheelName: wheelName, restaurants: restaurants)
-        // idea 2
+
+        wheels[index].wheelName = wheelName
+        wheels[index].restaurants = restaurants
+        saveToPersistenceStore()
+    }
+    
+    func isUpdated(wheel: Wheel, wheelName: String, restaurants: [Restaurant], wheelSelected: Bool) {
+        guard let index = wheels.firstIndex(of: wheel) else {
+            print("Wheel was not found")
+            return }
         wheels[index].wheelName = wheelName
         wheels[index].restaurants = restaurants
         saveToPersistenceStore()
@@ -76,5 +93,24 @@ class WheelController {
         } catch {
             print("Error decoding our data into wheels: \(error) -- \(error.localizedDescription)")
         }
+    }
+    
+    func didSelectWheel(at index: Int) {
+
+        for wheel in wheels {
+            wheel.wheelSelected = false
+        }
+        wheels[index].wheelSelected = true
+    }
+    func randomWinner() -> String{
+        var restaurantOptions: [String] = []
+        for wheel in wheels {
+            if wheel.wheelSelected == true {
+                for restaurant in wheel.restaurants {
+                    restaurantOptions.append(restaurant.restaurantName)
+                }
+            }
+        }
+        return restaurantOptions.randomElement() ?? "No restaurant found"
     }
 }

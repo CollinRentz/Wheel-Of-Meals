@@ -12,11 +12,13 @@ class Wheel: Codable, Equatable {
     var wheelName: String
     var restaurants: [Restaurant]
     var id: String
+    var wheelSelected: Bool = false
     
-    init(wheelName: String, restaurants: [Restaurant], id: String = UUID().uuidString) {
+    init(wheelName: String, restaurants: [Restaurant], id: String = UUID().uuidString, wheelSelected: Bool) {
         self.wheelName = wheelName
         self.restaurants = restaurants
         self.id = id
+        self.wheelSelected = wheelSelected
     }
     
     // Equatable Conformance
