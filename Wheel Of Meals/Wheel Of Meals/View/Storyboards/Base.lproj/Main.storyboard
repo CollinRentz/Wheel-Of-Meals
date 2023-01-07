@@ -79,14 +79,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wheel Of Meals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqk-Yj-mEC">
-                                <rect key="frame" x="0.0" y="119" width="393" height="47"/>
+                                <rect key="frame" x="0.0" y="109" width="393" height="47"/>
                                 <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v8-Bu-h1I">
-                                <rect key="frame" x="136.66666666666666" y="705" width="119.99999999999997" height="34"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-Bq-IyU" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="196" width="393" height="413"/>
+                                <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" label="116363-fortune-wheel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="116363 fortune-wheel"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v8-Bu-h1I">
+                                <rect key="frame" x="136" y="681" width="119.99999999999997" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="sp3-Qw-IlD"/>
                                 </constraints>
@@ -101,24 +109,16 @@
                                     <action selector="spinButtonTapped:" destination="zUe-xU-1ED" eventType="touchUpInside" id="POn-Nx-kVq"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-Bq-IyU" customClass="LottieAnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="196" width="393" height="449"/>
-                                <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <accessibility key="accessibilityConfiguration" label="116363-fortune-wheel"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="116363 fortune-wheel"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ONh-Uf-g7Q"/>
                         <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="vr6-Bq-IyU" firstAttribute="width" secondItem="CB0-iA-vea" secondAttribute="width" id="FCm-8m-xj2"/>
-                            <constraint firstItem="2v8-Bu-h1I" firstAttribute="top" secondItem="vr6-Bq-IyU" secondAttribute="bottom" constant="60" id="G1g-re-Ije"/>
+                            <constraint firstItem="2v8-Bu-h1I" firstAttribute="top" secondItem="vr6-Bq-IyU" secondAttribute="bottom" constant="50" id="G1g-re-Ije"/>
                             <constraint firstItem="Lqk-Yj-mEC" firstAttribute="width" secondItem="CB0-iA-vea" secondAttribute="width" id="Gbp-EJ-Fh4"/>
                             <constraint firstItem="vr6-Bq-IyU" firstAttribute="centerX" secondItem="ONh-Uf-g7Q" secondAttribute="centerX" id="HON-3D-6J8"/>
                             <constraint firstItem="vr6-Bq-IyU" firstAttribute="top" secondItem="Lqk-Yj-mEC" secondAttribute="bottom" constant="30" id="fU6-kC-fci"/>
-                            <constraint firstItem="Lqk-Yj-mEC" firstAttribute="top" secondItem="ONh-Uf-g7Q" secondAttribute="top" constant="60" id="k47-wn-ema"/>
+                            <constraint firstItem="Lqk-Yj-mEC" firstAttribute="top" secondItem="ONh-Uf-g7Q" secondAttribute="top" constant="50" id="k47-wn-ema"/>
                             <constraint firstItem="ONh-Uf-g7Q" firstAttribute="bottom" secondItem="2v8-Bu-h1I" secondAttribute="bottom" constant="30" id="qHc-Es-kFj"/>
                             <constraint firstItem="2v8-Bu-h1I" firstAttribute="centerX" secondItem="ONh-Uf-g7Q" secondAttribute="centerX" id="r2y-eu-oQl"/>
                         </constraints>
