@@ -20,7 +20,7 @@ class WheelController {
                 Restaurant(restaurantName: "Taco Bell"),
                 Restaurant(restaurantName: "McDonald's"),
                 Restaurant(restaurantName: "Panda Express"),
-                Restaurant(restaurantName: "Jersey Mikes"),
+                Restaurant(restaurantName: "Firehouse Subs"),
                 Restaurant(restaurantName: "Subway"),
                 Restaurant(restaurantName: "Chick-Fil-A"),
                 Restaurant(restaurantName: "Del Taco")
