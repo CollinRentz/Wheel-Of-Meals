@@ -86,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-Bq-IyU" customClass="LottieAnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="196" width="393" height="413"/>
+                                <rect key="frame" x="0.0" y="186" width="393" height="469"/>
                                 <color key="backgroundColor" red="0.26353758570000002" green="0.59626001120000005" blue="0.97132629159999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" label="116363-fortune-wheel"/>
                                 <userDefinedRuntimeAttributes>

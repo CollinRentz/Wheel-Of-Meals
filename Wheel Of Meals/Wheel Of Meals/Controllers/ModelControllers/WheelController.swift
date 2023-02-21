@@ -24,7 +24,7 @@ class WheelController {
                 Restaurant(restaurantName: "Subway"),
                 Restaurant(restaurantName: "Chick-Fil-A"),
                 Restaurant(restaurantName: "Del Taco")
-                    ], wheelSelected: false),
+                    ], wheelSelected: true),
             Wheel(wheelName: "Mexican Restaurants", restaurants:
                     [
                 Restaurant(restaurantName: "Costa Vida"),
@@ -34,6 +34,16 @@ class WheelController {
                 Restaurant(restaurantName: "Beto's"),
                 Restaurant(restaurantName: "Del Taco"),
                 Restaurant(restaurantName: "Tacotime")
+                    ], wheelSelected: false),
+            Wheel(wheelName: "<-- Slide To Edit <--", restaurants:
+                    [
+                Restaurant(restaurantName: "Example 1"),
+                Restaurant(restaurantName: "Example 2"),
+                Restaurant(restaurantName: "Example 3"),
+                Restaurant(restaurantName: "Example 4"),
+                Restaurant(restaurantName: "Example 5"),
+                Restaurant(restaurantName: "Example 6"),
+                Restaurant(restaurantName: "Example 7")
                     ], wheelSelected: false)
             ]
         wheels = sampleWheels
